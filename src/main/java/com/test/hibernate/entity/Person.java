@@ -1,9 +1,12 @@
 package com.test.hibernate.entity;
 
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.annotations.Cache;
 import javax.persistence.*;
 
 @Entity
 @Table(name = "Person")
+@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
