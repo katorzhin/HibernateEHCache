@@ -31,7 +31,6 @@ public class PersonDAO extends AbstractDAO {
         for (int i = 0; i < 2; i++) {
             Person p = session.get(Person.class, 1);
             System.out.println(p);
-
         }
         stop();
         session.close();
@@ -51,7 +50,7 @@ public class PersonDAO extends AbstractDAO {
     public static void main(String[] args) {
         PersonDAO dao = new PersonDAO();
 
-       dao.testCacheLevel1();
+        dao.testCacheLevel1();
 
 //        for (int i = 0; i < 2; i++) {
 //            Person p = dao.getById(1);

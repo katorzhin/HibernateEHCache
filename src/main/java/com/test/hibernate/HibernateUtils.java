@@ -10,15 +10,15 @@ public class HibernateUtils {
 
     private static HibernateUtils instanse = new HibernateUtils();
 
-    private HibernateUtils(){
+    private HibernateUtils() {
         sessionFactory = new Configuration().configure().buildSessionFactory();
     }
 
-    public static HibernateUtils getInstanse(){
+    public static HibernateUtils getInstanse() {
         return instanse;
     }
 
-    public Session createSession(){
+    public Session createSession() {
         return sessionFactory.openSession();
     }
 
