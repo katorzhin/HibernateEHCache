@@ -28,5 +28,6 @@
         <mapping class="com.test.hibernate.entity.Person"/>
         <mapping class="com.test.hibernate.entity.PersonInfo"/>
 
+
     </session-factory>
 </hibernate-configuration>

@@ -36,6 +36,7 @@ public class Person {
     public void setPersonInfo(PersonInfo personInfo) {
         this.personInfo = personInfo;
     }
+
     @Override
     public String toString() {
         return "Person{" +
