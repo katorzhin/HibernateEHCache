@@ -6,5 +6,6 @@ import org.hibernate.Session;
 public class AbstractDAO {
     public Session openSession(){
         return HibernateUtils.getInstanse().createSession();
+
     }
 }

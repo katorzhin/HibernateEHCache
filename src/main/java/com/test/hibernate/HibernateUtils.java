@@ -13,6 +13,7 @@ public class HibernateUtils {
     private HibernateUtils() {
         sessionFactory = new Configuration().configure().buildSessionFactory();
     }
+
     public static HibernateUtils getInstanse() {
         return instanse;
     }

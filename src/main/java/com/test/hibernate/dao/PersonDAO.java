@@ -36,6 +36,7 @@ public class PersonDAO extends AbstractDAO {
         session.close();
     }
 
+
     private void start() {
         time = System.currentTimeMillis();
     }
@@ -45,6 +46,11 @@ public class PersonDAO extends AbstractDAO {
     private void stop() {
         long diff = System.currentTimeMillis() - time;
         System.out.println("Time is " + diff + "ms");
+    }
+    public void testCacheLevel2(){
+        for (int i = 0; i < 2; i++) {
+            Person p = getById(1);
+        }
     }
 
     public static void main(String[] args) {
